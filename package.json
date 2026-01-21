@@ -26,6 +26,10 @@
   "test:mobile": "playwright test tests/mobile --project=mobile",
   "test:mobile:ui": "playwright test tests/mobile  --project=mobile --ui",
   "test:mobile:debug": "playwright test tests/mobile --project=mobile --debug",
+
+  "test:media": "playwright test tests/media/ --project=chromium",
+  "test:media:ui": "playwright test tests/media/ --project=chromium --ui",
+  "test:media:headed": "playwright test tests/media/ --project=chromium --headed",
   
   "report": "playwright show-report",
   "lint": "eslint . --ext .ts",
