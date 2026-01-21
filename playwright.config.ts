@@ -9,7 +9,7 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'playwright-report' }]],
   use: {
     baseURL: 'https://demoqa.com',
-    headless: true,
+    headless: Boolean(process.env.CI),
     screenshot: 'only-on-failure',
     trace: 'on-first-retry',
     viewport: { width: 1920, height: 1080 },
